@@ -1,0 +1,22 @@
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+  <!--HERO-->
+    <div class="{{page.landing-hero}}">
+      <div class="landing-title">
+        <h1>{{page.title}}</h1>
+      </div>
+    </div>
+  <!--CLOSE HERO-->
+
+
+  {{ content }}
+
+  {% include footer.html %}
+
+
+  </body>
+  </html>
