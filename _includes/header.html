@@ -1,0 +1,89 @@
+<nav>
+    <div class="logo">
+			<a href="{{site.url}}">
+				<img alt="Shoe Angel Logo" src="{{site.baseurl}}/images/img/shoeangel-logo-white.png">
+			</a>
+		</div>
+    <div class="menu">
+      {% unless page.layout == 'front' %}
+        <ul class="navigation">
+          {% for link in site.navigation %}
+            {% assign current = nil %}
+            {% if page.url == link.url or page.layout == link.layout %}
+              {% assign current = 'current' %}
+            {% endif %}
+
+            <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+              <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endunless %}
+    </div>
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+    </div>
+</nav>
+<div class="mobile-menu">
+  {% unless page.layout == 'front' %}
+    <ul class="navigation">
+      {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% if page.url == link.url or page.layout == link.layout %}
+          {% assign current = 'current' %}
+        {% endif %}
+
+        <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+          <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endunless %}
+</div>
+		<!-- <nav role="navigation" class="main-nav" id="main_nav">
+			<div id="nav-icon1">
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+		<div id="submenu" class="submenu">
+			{% unless page.layout == 'front' %}
+	  		<ul class="navigation">
+			    {% for link in site.navigation %}
+			      {% assign current = nil %}
+			      {% if page.url == link.url or page.layout == link.layout %}
+			        {% assign current = 'current' %}
+			      {% endif %}
+
+			      <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+			        <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+			      </li>
+			    {% endfor %}
+			  </ul>
+			{% endunless %}
+		</div>
+
+		<nav id="main_nav_desktop">
+			{% unless page.layout == 'front' %}
+	  		<ul class="navigation">
+			    {% for link in site.navigation %}
+			      {% assign current = nil %}
+			      {% if page.url == link.url or page.layout == link.layout %}
+			        {% assign current = 'current' %}
+			      {% endif %}
+
+			      <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+			        <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+			      </li>
+			    {% endfor %}
+			  </ul>
+			{% endunless %}
+		</nav>
+	</div>
+
+		<script>
+			document.getElementById('nav-icon1').onclick = function() {
+			    this.classList.toggle('cross');
+					document.getElementById('submenu').classList.toggle('open');
+			}
+		</script> -->
