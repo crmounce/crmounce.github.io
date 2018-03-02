@@ -10,8 +10,23 @@ layout: default
   </div>
 <!--CLOSE HERO-->
 
+{% if page.title == 'Donations' %}
+<div class="container">
+<h2>Charitable Donations</h2>
+<p>5% of every Shoe Angel Purchase is given to charity. Your Employees choose from 2 preset national charites – Ronald McDonald House Charities and the Make-A-Wish Foundation - and 2 local charities or foundations DESIGNATED BY YOU. Charity options can be customized per location, department, floor and even per associate.</p>
+</div>
+{% include counter.html %}
+{% endif %}
+
 <div class="container">
 {{ content }}
 </div>
 
 {% include form.html %}
+
+{% if page.title == 'Contact' %}
+<div class="container">
+<h4>Or contact our Shoe Goddess Ashley Campbell directly by phone at 740.753.9100 x2112 or by email at <a href="mailto:ashley.campbell@lehighoutfitters.com?subject=Shoe Angel website inquiry">ashley.campbell@lehighoutfitters.com</a></h4><br>
+<p><strong>Note:</strong> The Shoe Angel footwear program is currently only offered to continental U.S., Alaska, Hawaii, and Puerto Rico.</p>
+</div>
+{% endif %}

@@ -3,7 +3,7 @@ title: Shoe Angel Footwear Programs
 email: chris.mounce@rockybrands.com
 description: Footwear Programs benefiting Medical Professionals and the communities they serve.
 baseurl: ""
-url: "http://localhost:4000"
+url: "https://crmounce.github.io/"
 github_username:  crmounce
 # Build Settings
 sass:

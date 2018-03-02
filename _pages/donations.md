@@ -6,11 +6,6 @@ hero-image: ../images/img/donations-hero.jpg
 landing-hero: donations-landing-hero
 ---
 
-<h2>Charitable Donations</h2>
-<p>5% of every Shoe Angel Purchase is given to charity. Your Employees choose from 2 preset national charites – Ronald McDonald House Charities and the Make-A-Wish Foundation - and 2 local charities or foundations DESIGNATED BY YOU. Charity options can be customized per location, department, floor and even per associate.</p>
-
-{% include counter.html %}
-
 <h2>FAQs</h2>
 <div class="faq">
   <p>Can I donate to any charity or foundation?<br><span class="answer">Yes. We have set up 2 national charities from which your employees can choose but we also allow you to choose 2 additional charities which could include your hospital or local community foundation.</span></p>
