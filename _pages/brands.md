@@ -7,10 +7,10 @@ landing-hero: landing-hero
 ---
 
 <div class="container">
-  <p>Shoe Angel provides all the top-rated, industry-qualified brands you know and love. We've got hundreds of styles to choose from so your employees are sure to find the perfect fit to keep them safe in all-day comfort. <span style="color:#0050b2;font-weight:bold">DO GOOD</span> to provide the very best to your employees... cause the right shoes <span style="color:#0050b2;font-weight:bold">FEEL GOOD</span></p>
+  <p>Shoe Angel provides all the top-rated, industry-qualified brands you know and love. We've got hundreds of styles to choose from so your employees are sure to find the perfect fit to keep them safe in all-day comfort. <span style="color:#0050b2;font-weight:bold">DO GOOD</span> to provide the very best to your employees...cause the right shoes <span style="color:#0050b2;font-weight:bold">FEEL GOOD.</span></p>
 </div>
 
-<div class="boxbox">
+<div class="boxbox brandy">
   <div class="row align-items-center">
     <div class="col-lg">
       <img class="img-fluid" src="../images/img-fix/nautilus.jpg" alt="">
@@ -78,7 +78,7 @@ landing-hero: landing-hero
       <img class="img-fluid" src="../images/img-fix/durango.jpg" alt="">
     </div>
   </div>
-  <div class="box" style="background:#c2cad5;padding-top:15px;">
+  <div class="box" style="background:#c2cad5;padding:15px 0;">
     <h2 style="text-transform:uppercase;color:#0050b2;font-weight:bold;">Coming this Spring</h2>
     <div class="row align-items-center">
       <div class="col-lg ">

@@ -33,6 +33,12 @@ nav{
   margin-bottom: 20px;
   box-shadow: 0 2px 10px rgba(0,0,0,.2);
 }
+.navigation li:hover{
+  background: #3975BF;
+}
+ul{
+  margin-bottom: 0rem !important;
+}
 p{
   color: #4f4f4f;
 }
@@ -46,6 +52,12 @@ h2{
 a h2:hover{
   color: #3975BF;
   transition: .3s;
+}
+a:hover{
+  text-decoration: none;
+}
+.btn:hover{
+  color: #fff !important;
 }
 
 
@@ -119,23 +131,38 @@ a h2:hover{
 
 
 
-
 /* CONTAINER */
 .container{
   width:50%;
   margin: 3em auto 0;
 }
+.container p{
+  line-height: 1.5em;
+  padding: 0px 0 20px 0;
+}
+
+
+
 
 /* BOOTSTRAP */
-.col-lg{
+.buckets .col-lg{
   background: #fff;
   margin: 15px 15px;
   min-height: 150px;
-  padding: 0 !important;
+  padding: 25px 0 !important;
   text-align: center;
   box-shadow: 0 2px 10px rgba(0,0,0,.2);
   border-radius: 2px;
 }
+ .brandy .col-lg{
+   background: #fff;
+   margin: 15px 15px;
+   min-height: 150px;
+   padding: 25px 0 !important;
+   text-align: center;
+   box-shadow: 0 2px 10px rgba(0,0,0,.2);
+   border-radius: 2px;
+ }
 .boxbox{
   width: 100%;
   background: #f4f4f4;
@@ -144,9 +171,26 @@ a h2:hover{
   width: 95%;
   margin:auto;
 }
-.col-lg img{
-  margin: 25px 0;
+.brandy .col-lg img{
   width: 250px;
+}
+.col-lg p{
+  padding: 10px 20px 0 20px;
+}
+.main-box{
+  padding: 15px 15px;
+}
+.full-box{
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+  border-radius: 2px;
+}
+.col-lg{
+  padding: 0 !important;
+  text-align: center;
+}
+.full-box img{
+
 }
 
 
@@ -154,105 +198,118 @@ a h2:hover{
 
 
 /* FLEXBOX HELL */
-.flex{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background: #f4f4f4;
-  height: auto;
-  padding: 20px 0;
-}
-.home-flex{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background: #f4f4f4;
-  padding: 0 0 20px 0;
-}
-.brand-flex{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background: #f4f4f4;
-  height: 180px;
-}
-.col{
-  width: 30%;
-  height: 170px;
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,.2);
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 10px 0 0 0;
-}
-.home-col{
-  width: 95%;
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,.2);
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.brand-col{
-  width: 23%;
-  height: 130px;
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,.2);
-  border-radius: 2px;
-  justify-content: center;
-  align-items: center;
-  display:flex;
-}
-.brand-col img{
-  max-width: 150px;
-  margin: auto;
-  text-align: center;
-  display: block;
-}
-.col .btn{
-  width: 100px;
-  margin: 0 auto;
-  font-weight: 700;
-  letter-spacing: .05em;
-}
-.col p{
-  text-align: center;
-  padding: 10px 20px 20px 20px;
-}
-.home-col p{
-  padding: 0 0 30px 0;
-  text-align: center;
-}
-.home-col div{
-  flex: 1;
-}
-.left{
-  width: 50%;
-  background-image: url('images/img/4eursole_lsp_RKH049_low.jpg');
-  background-size: cover;
-  background-position-y: -110px;
-  background-repeat: no-repeat;
-}
-.right{
-  width: 50%;
-  padding: 50px;
-}
-.brand-img{
-  background-image: url('images/img/brands-3.jpg') !important;
-  background-size: contain !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.charity-img{
-  background-image: url('images/img/charity-2.jpg') !important;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+// .flex{
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   background: #f4f4f4;
+//   height: auto;
+//   padding: 20px 0;
+// }
+// .home-flex{
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   background: #f4f4f4;
+//   padding: 0 0 20px 0;
+// }
+// .brand-flex{
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   background: #f4f4f4;
+//   height: 180px;
+// }
+// .col{
+//   width: 30%;
+//   height: 170px;
+//   background-color: white;
+//   box-shadow: 0 2px 10px rgba(0,0,0,.2);
+//   border-radius: 2px;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   text-align: center;
+//   padding: 10px 0 0 0;
+// }
+// .home-col{
+//   width: 95%;
+//   background-color: white;
+//   box-shadow: 0 2px 10px rgba(0,0,0,.2);
+//   border-radius: 2px;
+//   display: flex;
+//   justify-content: center;
+//   text-align: center;
+// }
+// .brand-col{
+//   width: 23%;
+//   height: 130px;
+//   background-color: white;
+//   box-shadow: 0 2px 10px rgba(0,0,0,.2);
+//   border-radius: 2px;
+//   justify-content: center;
+//   align-items: center;
+//   display:flex;
+// }
+// .brand-col img{
+//   max-width: 150px;
+//   margin: auto;
+//   text-align: center;
+//   display: block;
+// }
+// .col .btn{
+//   width: 100px;
+//   margin: 0 auto;
+//   font-weight: 700;
+//   letter-spacing: .05em;
+// }
+// .col p{
+//   text-align: center;
+//   padding: 10px 20px 20px 20px;
+// }
+// .home-col p{
+//   padding: 0 0 30px 0;
+//   text-align: center;
+// }
+// .home-col div{
+//   flex: 1;
+// }
+// .left{
+//   width: 50%;
+//   background-image: url('images/img/4eursole_lsp_RKH049_low.jpg');
+//   background-size: cover;
+//   background-position-y: -110px;
+//   background-repeat: no-repeat;
+// }
+// .right{
+//   width: 50%;
+//   padding: 50px;
+// }
+// .brand-img{
+//   background-image: url('images/img/brands-3.jpg') !important;
+//   background-size: contain !important;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+// .charity-img{
+//   background-image: url('images/img/charity-2.jpg') !important;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+// .brands {
+//   margin: 0 auto;
+//   width: 100%;
+// }
+// .brands img {
+//   max-width: 800px;
+//   width: 100%;
+//   margin-top: 1em;
+// }
+
+
+/* TITLES? */
+
 .hero-title{
   height: 70vh;
   display: flex;
@@ -272,21 +329,8 @@ a h2:hover{
   width: 500px;
 }
 .subtitle {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.65em;
-}
-.container p{
-  line-height: 1.5em;
-  padding: 0px 0 20px 0;
-}
-.brands {
-  margin: 0 auto;
-  width: 100%;
-}
-.brands img {
-  max-width: 800px;
-  width: 100%;
-  margin-top: 1em;
 }
 
 
@@ -515,17 +559,22 @@ input{
   top: 50px;
   background: #0050b2;
   width: 100%;
+  z-index: 999;
 }
 .mobile-menu ul{
   list-style-type: none;
 }
-.mobile-menu li, .mobile-menu li a{
+.mobile-menu li{
   text-shadow: none;
   color: #FFF;
   font-weight: normal;
   padding: 1em;
   border-bottom: solid 1px #fff;
   text-align: center;
+}
+.mobile-menu li a{
+  color: #FFF;
+  font-weight: normal;
 }
 .hamburger-menu {
   position: absolute;
@@ -599,9 +648,9 @@ input{
   .faq-landing-hero{
     background-position: center;
   }
-  .first{
-    margin: 2em auto 0;
-  }
+  // .first{
+  //   margin: 2em auto 0;
+  // }
   .menu {
     display: none;
   }
