@@ -79,7 +79,7 @@ landing-hero: landing-hero
     </div>
   </div>
   <div class="box" style="background:#c2cad5;padding:15px 0;">
-    <h2 style="text-transform:uppercase;color:#0050b2;font-weight:bold;">Coming this Spring</h2>
+    <h2 style="text-transform:uppercase;color:#0050b2;">Coming this Spring</h2>
     <div class="row align-items-center">
       <div class="col-lg ">
         <img class="img-fluid" class="cs-gray" src="../images/img-fix/nb.jpg" alt="">
